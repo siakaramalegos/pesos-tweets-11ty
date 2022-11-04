@@ -14,6 +14,10 @@ For the next bit, you'll need to download your Twitter data. Go to [twitter.com/
 
 Now, go to **/src/_data/tweets.js** and replace "TheGreenGreek" with your Twitter handle. This file imports the cache tweets file and filters out replies to other people and retweets. You can play with that later if you want cool data analysis like Zach does on [his archive](https://www.zachleat.com/twitter/). This repo is only an MVP.
 
+## Privacy
+
+You probably don't want a public copy of your Twitter data file out on the interwebs, so make your repo private or figure out a way to only store it where you deploy. It can contain stuff you might not want shared. I looked through my sample data to make sure it wasn't too bad just so I could make a public repo for folks to start with.
+
 ## Ongoing development
 
 This is a really rough MVP at the moment. I plan on attempting to pull in images and modify links to real ones not obscured by Twitter. And of course making it look cool. Feel free to follow this for updates or take what it currently is and run with it for yourself.
