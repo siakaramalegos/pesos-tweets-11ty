@@ -2,14 +2,14 @@ const fs = require("fs");
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 // const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 // const { minify } = require('terser')
-// const filters = require('./src/_11ty/filters');
+const filters = require('./src/_11ty/filters');
 // const shortcodes = require("./src/_11ty/shortcodes");
 
 module.exports = function(eleventyConfig) {
   // Filters
-  // Object.keys(filters).forEach(filterName => {
-  //   eleventyConfig.addFilter(filterName, filters[filterName])
-  // })
+  Object.keys(filters).forEach(filterName => {
+    eleventyConfig.addFilter(filterName, filters[filterName])
+  })
 
   // eleventyConfig.addNunjucksAsyncFilter("jsmin", async (code, callback) => {
   //   try {
@@ -76,6 +76,7 @@ module.exports = function(eleventyConfig) {
       "md",
       "njk",
       "html",
+      "11ty.js",
     ],
 
     // If your site lives in a different subdirectory, change this.

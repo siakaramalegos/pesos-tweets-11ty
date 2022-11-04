@@ -1,5 +1,5 @@
-_cache/
 _site/
+src/_cache/all_tweets.js
 node_modules/
 package-lock.json
 */.DS_Store
