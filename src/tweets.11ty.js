@@ -11,6 +11,9 @@ class Tweet {
         data: "tweets",
         size: 10,
       },
+      eleventyComputed: data => {
+        return {page: data.page}
+      }
     };
   }
 
@@ -23,12 +26,14 @@ class Tweet {
           })
           .join("")}
       </div>
-      <ol>
+      <ol class="nav-pagination">
         ${data.pagination.pages
           .map(function (item, index) {
-            return `<li><a href="${
-              data.pagination.hrefs[index]
-            }">Page ${index + 1}</a></li>`;
+            const currentPage = data.page.url == data.pagination.hrefs[index]
+            return `
+              <li>
+                <a href="${data.pagination.hrefs[index]}" ${currentPage ? 'aria-current="page" class="active"' : "" }>Page ${index + 1}</a>
+              </li>`;
           })
           .join("")}
       </ol>`;

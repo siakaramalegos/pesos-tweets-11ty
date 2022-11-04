@@ -70,6 +70,17 @@ header, main {
   background-color: var(--grey-05);
 }
 
+.nav-pagination {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-pagination .active {
+  font-weight: 700;
+}
+
 @media screen and (min-width: 500px) {
   :root {
     --size-200: 0.64rem;
