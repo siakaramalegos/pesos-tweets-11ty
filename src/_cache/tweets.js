@@ -3,50 +3,6 @@ module.exports = [
     tweet: {
       edit_info: {
         initial: {
-          editTweetIds: ["1587899371932336134"],
-          editableUntil: "2022-11-02T20:38:06.000Z",
-          editsRemaining: "5",
-          isEditEligible: false,
-        },
-      },
-      retweeted: false,
-      source:
-        '<a href="https://mobile.twitter.com" rel="nofollow">Twitter Web App</a>',
-      entities: {
-        hashtags: [],
-        symbols: [],
-        user_mentions: [
-          {
-            name: "castastrophe",
-            screen_name: "castastrophee",
-            indices: ["0", "14"],
-            id_str: "152403667",
-            id: "152403667",
-          },
-        ],
-        urls: [],
-      },
-      display_text_range: ["0", "44"],
-      favorite_count: "1",
-      in_reply_to_status_id_str: "1587833524739985408",
-      id_str: "1587899371932336134",
-      in_reply_to_user_id: "152403667",
-      truncated: false,
-      retweet_count: "0",
-      id: "1587899371932336134",
-      in_reply_to_status_id: "1587833524739985408",
-      created_at: "Wed Nov 02 20:08:06 +0000 2022",
-      favorited: false,
-      full_text: "@castastrophee I'm sorry. That really sucks.",
-      lang: "en",
-      in_reply_to_screen_name: "castastrophee",
-      in_reply_to_user_id_str: "152403667",
-    },
-  },
-  {
-    tweet: {
-      edit_info: {
-        initial: {
           editTweetIds: ["1587481214826545152"],
           editableUntil: "2022-11-01T16:56:30.000Z",
           editsRemaining: "5",
