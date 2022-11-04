@@ -1,3 +1,5 @@
+const { renderTweet } = require("./_11ty/helpers");
+
 class Test {
   // or `async data() {`
   // or `get data() {`
@@ -7,15 +9,14 @@ class Test {
       pagination: {
         data: "tweets",
         size: 1,
-        alias: "tweet"
+        alias: "tweet",
       },
-      permalink: data => `/tweet/${data.tweet.tweet.id_str}/`
+      permalink: (data) => `/tweet/${data.tweet.tweet.id_str}/`,
     };
   }
 
   render(data) {
-    return `
-       <p>${data.tweet.tweet.full_text}</p>`;
+    return renderTweet(data.tweet.tweet);
   }
 }
 

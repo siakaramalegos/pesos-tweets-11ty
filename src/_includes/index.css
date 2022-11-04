@@ -3,6 +3,16 @@
   --font-display: Arial, Helvetica, sans-serif;
   --font-serif: Georgia, 'Times New Roman', Times, serif;;
 
+  --grey-05: #eef0f2;
+  --grey-10: rgb(207,212,218);
+  --grey-default: rgb(207,212,218);
+  --grey-20: rgb(146,151,156);
+  --grey-30: rgb(98,103,108);
+  --grey-40: rgb(62,66,71);
+  --grey-50: rgb(36,40,44);
+  --grey-60: rgb(18,22,27);
+  --grey-70: rgb(15,4,17);
+
   --size-200: 0.694rem;
   --size-300: 0.833rem;
   --size-400: 1rem;
@@ -39,6 +49,25 @@ header, main {
   max-width: 720px;
   margin: 0 auto;
   padding: var(--size-400);
+}
+
+.tweet-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tweet {
+  border: 1px solid var(--grey-10);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tweet header, .tweet footer, .tweet .tweet-content {
+  padding: 1rem;
+}
+
+.tweet footer {
+  background-color: var(--grey-05);
 }
 
 @media screen and (min-width: 500px) {
