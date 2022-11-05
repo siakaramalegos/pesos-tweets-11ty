@@ -51,6 +51,13 @@ header, main {
   padding: var(--size-400);
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: var(--size-400);
+}
+
 .tweet-list {
   list-style: none;
   padding: 0;
@@ -59,15 +66,36 @@ header, main {
 .tweet {
   border: 1px solid var(--grey-10);
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: var(--size-600);
 }
 
 .tweet header, .tweet footer, .tweet .tweet-content {
-  padding: 1rem;
+  padding: var(--size-300) var(--size-400);
+}
+
+.tweet header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+.tweet header div {
+  display: flex;
+  align-items: center;
+  font-size: var(--size-300);
+  gap: var(--size-300);
 }
 
 .tweet footer {
   background-color: var(--grey-05);
+  display: flex;
+  gap: 2rem;
+}
+
+.tweet footer div, .tweet footer div a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .nav-pagination {
@@ -77,7 +105,7 @@ header, main {
   gap: 1rem;
 }
 
-.nav-pagination .active {
+.active {
   font-weight: 700;
 }
 
