@@ -23,7 +23,6 @@ const replaceLinks = (full_text, entities) => {
 
   // Replace newline chars with breaks
   text = text.replace(/\n/g, "<br>");
-  console.log({ text });
   return text;
 };
 
@@ -35,9 +34,11 @@ const renderTweet = ({
   retweet_count,
   reply_count,
   entities,
+  replies,
+  in_reply_to_status_id_str,
 }) => {
   return `
-    <div class="tweet">
+    <div class="tweet ${in_reply_to_status_id_str ? "indent" : ""}">
       <header>
         <small>${dateFromWeirdTwitterDate(created_at)}</small>
         <div>
@@ -73,6 +74,7 @@ const renderTweet = ({
         </div>
       </footer>
     </div>
+    ${replies ? replies.map((reply) => renderTweet(reply)) : ""}
   `;
 };
 
