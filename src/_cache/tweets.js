@@ -1150,4 +1150,111 @@ module.exports = [
       lang: "en",
     },
   },
+  {
+    tweet: {
+      edit_info: {
+        initial: {
+          editTweetIds: ["1584974428110487552"],
+          editableUntil: "2022-10-25T18:55:25.000Z",
+          editsRemaining: "5",
+          isEditEligible: false,
+        },
+      },
+      retweeted: false,
+      source:
+        '<a href="https://mobile.twitter.com" rel="nofollow">Twitter Web App</a>',
+      entities: {
+        user_mentions: [],
+        urls: [],
+        symbols: [],
+        media: [
+          {
+            expanded_url:
+              "https://twitter.com/TheGreenGreek/status/1584974428110487552/photo/1",
+            indices: ["278", "301"],
+            url: "https://t.co/CervpTYCeB",
+            media_url: "http://pbs.twimg.com/media/Ff711IJXECcg1Ep.jpg",
+            id_str: "1584974411949608999",
+            id: "1584974411949608999",
+            media_url_https: "https://pbs.twimg.com/media/Ff711IJXECcg1Ep.jpg",
+            sizes: {
+              small: {
+                w: "510",
+                h: "680",
+                resize: "fit",
+              },
+              large: {
+                w: "1536",
+                h: "2048",
+                resize: "fit",
+              },
+              thumb: {
+                w: "150",
+                h: "150",
+                resize: "crop",
+              },
+              medium: {
+                w: "900",
+                h: "1200",
+                resize: "fit",
+              },
+            },
+            type: "photo",
+            display_url: "pic.twitter.com/CervpTYCeB",
+          },
+        ],
+        hashtags: [],
+      },
+      display_text_range: ["0", "301"],
+      favorite_count: "12",
+      id_str: "1584974428110487552",
+      truncated: false,
+      retweet_count: "0",
+      id: "1584974428110487552",
+      possibly_sensitive: false,
+      created_at: "Tue Oct 25 18:25:25 +0000 2022",
+      favorited: false,
+      full_text:
+        "I love traveling to a place and finding weird or atypical sights to go to. \n\nIn Amsterdam, KattenKabinet 100% fit the bill. This guy loved his cat and bought a bunch of art with cats in it then bought a canal house and made a museum of the cat art and cats also live there. A++ https://t.co/CervpTYCeB",
+      lang: "en",
+      extended_entities: {
+        media: [
+          {
+            expanded_url:
+              "https://twitter.com/TheGreenGreek/status/1584974428110487552/photo/1",
+            indices: ["278", "301"],
+            url: "https://t.co/CervpTYCeB",
+            media_url: "http://pbs.twimg.com/media/Ff711IJXECcg1Ep.jpg",
+            id_str: "1584974411949608999",
+            id: "1584974411949608999",
+            media_url_https: "https://pbs.twimg.com/media/Ff711IJXECcg1Ep.jpg",
+            sizes: {
+              small: {
+                w: "510",
+                h: "680",
+                resize: "fit",
+              },
+              large: {
+                w: "1536",
+                h: "2048",
+                resize: "fit",
+              },
+              thumb: {
+                w: "150",
+                h: "150",
+                resize: "crop",
+              },
+              medium: {
+                w: "900",
+                h: "1200",
+                resize: "fit",
+              },
+            },
+            type: "photo",
+            display_url: "pic.twitter.com/CervpTYCeB",
+          },
+        ],
+      },
+    },
+  },
 ];

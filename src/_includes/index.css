@@ -98,6 +98,12 @@ nav ul {
   gap: 8px;
 }
 
+.tweet img {
+  max-height: 600px;
+  margin: 1rem auto;
+  object-fit: cover;
+}
+
 .nav-pagination {
   list-style: none;
   padding: 0;
