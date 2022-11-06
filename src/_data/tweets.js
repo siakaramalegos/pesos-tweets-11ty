@@ -3,7 +3,7 @@ const MY_SCREEN_NAME = "TheGreenGreek";
 
 function filterRetweetsAndNotOwnReplies(tweets) {
   return tweets.filter((tweet) => {
-    const isNotReply = !tweet["tweet"]["in_reply_to_screen_name"];
+    const isNotReply = !tweet["tweet"]["in_reply_to_status_id"];
     const isReplyToSelf =
       tweet["tweet"]["in_reply_to_screen_name"] === MY_SCREEN_NAME;
     const isNotRetweet = tweet.tweet.full_text.slice(0, 3) !== "RT ";
