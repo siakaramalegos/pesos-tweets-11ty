@@ -1,3 +1,5 @@
+**Warning**: I just noticed that it doesn't filter out all replies that started to other people so that function needs more work. I'm going a different architecture route where I'm going to process my Twitter archive one time then focus on Mastodon for the future, so won't fix it here.
+
 # PESOS Twitter Archive
 
 Inspire by Zach Leatherman's ["I’M TAKING OWNERSHIP OF MY TWEETS"](https://www.zachleat.com/web/own-my-tweets/) blog post and ["OWN YOUR CONTENT ON SOCIAL MEDIA USING THE INDIEWEB"](https://www.zachleat.com/web/own-your-content/) talk, I'm attempting to create an MVP of a Twitter archive that you can fork and use for yourself just to get started.
